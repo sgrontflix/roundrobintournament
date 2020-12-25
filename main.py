@@ -7,6 +7,7 @@ def round_robin(competitors):
     :param competitors: list containing all competitors' names
     :return: matches for each day
     """
+
     # if there is an odd number of competitors, add '###' to the list
     # '###' counts as an instant win and will be matched against every competitor
     if len(competitors) % 2:
@@ -50,7 +51,7 @@ def round_robin(competitors):
         # in this script, vertex 0 is treated as the central vertex and, as such, never changes position
         # while the others rotate around it clockwise to generate each possible pairing
         #
-        # reference link:
+        # reference links:
         # https://en.wikipedia.org/wiki/Graph_factorization#Complete_graphs
         competitors.insert(1, competitors.pop())
 
@@ -60,6 +61,7 @@ def round_robin(competitors):
     return days
 
 
+# put your competitors here
 for turn in round_robin(['Alice', 'Bob', 'Claire', 'David', 'Emily', 'Frank', 'Gwen', 'Harry']):
     for pairing in turn:
         print(' - '.join(pairing))
