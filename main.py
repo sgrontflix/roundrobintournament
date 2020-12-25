@@ -51,7 +51,7 @@ def round_robin(competitors):
         # in this script, vertex 0 is treated as the central vertex and, as such, never changes position
         # while the others rotate around it clockwise to generate each possible pairing
         #
-        # reference links:
+        # reference link:
         # https://en.wikipedia.org/wiki/Graph_factorization#Complete_graphs
         competitors.insert(1, competitors.pop())
 
