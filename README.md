@@ -8,4 +8,4 @@ python main.py
 
 ## Notes
 
-Add your competitors inside of `round_robin()` at line 67.
+Add your competitors inside of `round_robin()` at line 65.
