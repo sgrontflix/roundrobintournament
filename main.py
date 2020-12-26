@@ -12,8 +12,8 @@ count = len(competitors)
 n_days = count - 1
 # number of daily matches
 #
-# typecasting to 'int' is required, otherwise 'daily_matches' would be treated
-# as a float and would not be usable inside the 'range()' function
+# typecasting to 'int' is required, otherwise 'daily_matches' would be
+# treated as 'float' and would not be usable inside the 'range()' function
 daily_matches = int(count / 2)
 
 # list containing every match of each day
