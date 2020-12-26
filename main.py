@@ -3,7 +3,7 @@ competitors = ['Alice', 'Bob', 'Claire', 'David', 'Emily', 'Frank', 'Gwen', 'Har
 
 # if there is an odd number of competitors, add '###' to the list
 # '###' counts as an instant win and will be matched against every competitor
-if len(competitors) % 2:
+if len(competitors) % 2 != 0:
     competitors.append('###')
 
 # number of competitors
@@ -47,7 +47,7 @@ for day in range(n_days):
     # reference link:
     # https://en.wikipedia.org/wiki/Graph_factorization#Complete_graphs
     competitors.insert(1, competitors.pop())
-    
+
     # save current day
     days.append(pairings)
 
