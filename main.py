@@ -15,8 +15,10 @@ n_days = count - 1
 # typecasting to 'int' is required, otherwise 'daily_matches' would be treated
 # as a float and would not be usable inside the 'range()' function
 daily_matches = int(count / 2)
+
 # list containing every match of each day
 days = []
+
 for day in range(n_days):
     # reset list containing pairings for the current day
     pairings = []
@@ -26,6 +28,7 @@ for day in range(n_days):
         # this line would always do the same thing each day
         # if it weren't for the following instruction
         pairings.append(f'{competitors[match]} - {competitors[count-match-1]}')
+
     # remove last competitor and put it after the first one
     #
     # you can understand why this is done by looking at
@@ -44,11 +47,11 @@ for day in range(n_days):
     # reference link:
     # https://en.wikipedia.org/wiki/Graph_factorization#Complete_graphs
     competitors.insert(1, competitors.pop())
+    
     # save current day
     days.append(pairings)
 
 # print schedule
-
 i = 1
 for day in days:
     print(f'\n[Day {i}]\n')
