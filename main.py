@@ -5,6 +5,7 @@ competitors = ['Alice', 'Bob', 'Claire', 'David', 'Emily', 'Frank', 'Gwen', 'Har
 # '###' counts as an instant win and will be matched against every competitor
 if len(competitors) % 2:
     competitors.append('###')
+
 # number of competitors
 count = len(competitors)
 # number of days
