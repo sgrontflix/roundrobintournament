@@ -8,4 +8,4 @@ python main.py
 
 ## Notes
 
-Add your competitors inside of `competitors` at line 2.
+Put your competitors inside of `competitors` at line 2.
