@@ -1,6 +1,6 @@
 # roundrobintournament
 
-Simple Round-robin tournament generator written in Python
+A simple Round-robin tournament generator written in Python
 
 ## Usage
 
